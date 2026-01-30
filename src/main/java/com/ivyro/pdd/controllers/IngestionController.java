@@ -15,7 +15,7 @@ public class IngestionController {
 
     @PostMapping("/ingest")
     public ResponseEntity<String> ingestData(){
-        ingestionService.ingestData();
+        ingestionService.ingestDataTxt();
         return ResponseEntity.ok("Ingestion started!");
     }
 }
